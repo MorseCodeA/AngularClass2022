@@ -16,8 +16,8 @@
       <p *ngIf="displayDetails">Surprise, you found the example text!</p>
       <ng-container *ngFor="let clickTime of buttonClickTimes; let i = index">
         <p 
-          [ngStyle]="{backgroundColor: i > 4 ? 'blue' : 'white'}"
-          [ngClass]="{fifthFontColor: i > 4}">
+          [ngStyle]="{backgroundColor: i > 3 ? 'blue' : 'white'}"
+          [ngClass]="{fifthFontColor: i > 3}">
           This button was clicked at {{ clickTime }}
         </p>
       </ng-container>
